@@ -1,0 +1,12 @@
+.head-im{
+    background-image: url("https://www.niwa.co.nz/sites/niwa.co.nz/files/water-ripple2.jpg");
+}
+.foot{
+    height: 100px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+    padding: 10px;
+    background-color: black;
+}
