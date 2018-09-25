@@ -1,14 +1,12 @@
-# NIWA Style guide for R Shiny Applications
+# Proposed NIWA Style for R Shiny Applications
 
-NIWA has a default style guide, created in conjunction with communications team and IT systems development.
 
-This style guide is applied to most systems within NIWA, giving a consistent image for NIWA systems.
+NIWA has a [default style guide])(https://styles.niwa.co.nz/, created in conjunction with communications team and IT systems development but the repo I found for R Shiny Apps still used the old logo so I forked NIWA's [shiny_styleguide](https://github.com/niwa/shiny-styleguide) and use some basic css to copy NIWA's current style.
 
-The file `niwastyleguide.R` contains the functions used to create the top header, the menu bar, and the footer.
-You can modify the links of your application by editing this file.
 
-Here's a screen shot of the default R Shiny app with the NIWA Style Guide.
+The file `style.css` contains basic css code for some of the elements defined in `ui.R`.
+
+Here's a screen shot of the a basic R Shiny app with my updated NIWA style.
 
 ![Screen shot of the default R Shiny app with the NIWA Style Guide](screenshot.png)
 
-For more information, visit the [NIWA Style Guide home page](https://styles.niwa.co.nz/).
