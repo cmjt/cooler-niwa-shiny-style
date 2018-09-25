@@ -3,9 +3,6 @@
 
 library(shiny)
 
-## Load UI customization functions
-source('./niwastyleguide.R')
-
 ## Define UI for application that draws a histogram
 shinyUI(
     fluidPage(
@@ -14,8 +11,12 @@ shinyUI(
         style = "margin: 0px !important; border: 0px !important; padding: 0px !important;",
         tags$head(
                  tags$div(class="head-im",
-                          img(src="https://www.niwa.co.nz/sites/niwa.co.nz/files/niwa-2018-horizontal-final-400_0.png",
-                              alt="NIWA horizontal logo",id= "logo"))
+                          tags$a(href = "https://www.niwa.co.nz",
+                                 tags$img(src="https://www.niwa.co.nz/sites/niwa.co.nz/files/niwa-2018-horizontal-final-400_0.png",
+                                          alt="NIWA horizontal logo",id= "logo"), target = "_blank"),
+                          tags$span(class="blank"),## blank horiz space
+                          tags$span(class="center-sp",tags$strong("NIWA Shiny App"))) ## change text to App name
+                 
              ),
         tags$br(), ## break
         ## two columns layout
@@ -35,7 +36,14 @@ shinyUI(
         tags$br(), ## break
         ## footer
         tags$div(tags$footer(class="foot",
-                             tags$img(src="NIWA_Rev_Hor_2.png", alt="reverse NIWA logo",height="30",width="70"))
+                             tags$a(href = "https://www.niwa.co.nz",
+                                    tags$img(src="NIWA_Rev_Hor_2.png", alt="reverse NIWA logo",height="30",width="70"),
+                                    target = "_blank"),
+                             ## list of links for footer
+                             tags$ul(tags$li(tags$a(href = "https://www.niwa.co.nz/privacy-policy", "NIWA Privacy Policy",
+                                                    target = "_blank")),
+                                     tags$li(id = "copyrightNiwa", "Copyright 2018 NIWA"))
+                             )
                  )
     )
 ) ## end of shiny UI

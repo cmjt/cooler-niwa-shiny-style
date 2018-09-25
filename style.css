@@ -6,7 +6,18 @@
     position:absolute;
     bottom:0;
     width:100%;
-    height:50px;
+    height:80px;
     padding: 10px;
     background-color: black;
+    color: white;
+}
+.center-sp{
+    margin:0 auto;
+    vertical-align: middle;
+    font-size: 20pt;
+    
+}
+.blank{
+    display:inline-block;
+    width: 300px;
 }
